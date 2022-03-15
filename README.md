@@ -102,7 +102,8 @@ go将业务数据导出excel
 | file_name | string | 下载的文件名 |
 | request_url | string | 请求回调的url |
 | request_params | string | 请求回调url的参数 |
-   
+
+请求示例：
 ```json
    {
     "user_id": 123,
@@ -135,6 +136,7 @@ go将业务数据导出excel
 | data | object | 数据内容对象 |
 | data.title | array | excel每一列的标题 |
 | data.key | array | 每一行数据的下标字段 |
+| data.total_page | int | 总页数 |
 | data.list | array | 数据集合 |
 | info | string | 提示信息 |
 ```json
