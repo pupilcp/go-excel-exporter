@@ -11,7 +11,7 @@ var Logger *logrus.Logger
 func SetLogger() {
 	logger := &lumberjack.Logger{
 		// 日志输出文件路径
-		Filename: Config.Get("log.logPath").(string) + "/" + time.Now().Format("20060102") + ".log",
+		Filename: Config.Get("log.logPath").(string) + "/system.log",
 		// 日志文件最大 size, 单位是 MB
 		MaxSize: int(Config.Get("log.maxSize").(int64)), // megabytes
 		// 最大过期日志保留的个数
