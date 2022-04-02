@@ -3,7 +3,6 @@ package global
 import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"time"
 )
 
 var Logger *logrus.Logger
